@@ -46,7 +46,7 @@ namespace CIS167_tictactoe_MasonMcLaughlin
 
                 board.getCell(bestmove.getRow(), bestmove.getCol()).setValue('O');
                 board.getCell(bestmove.getRow(), bestmove.getCol()).getBtn().Text = "O";
-                board.getCell(bestmove.getRow(), bestmove.getCol()).getBtn().ForeColor = Color.White;
+                board.getCell(bestmove.getRow(), bestmove.getCol()).getBtn().ForeColor = Color.Black;
 
                 playerCanPlay = true;
             }
@@ -78,7 +78,7 @@ namespace CIS167_tictactoe_MasonMcLaughlin
 
                 board.getCell(bestmove.getRow(), bestmove.getCol()).setValue('O');
                 board.getCell(bestmove.getRow(), bestmove.getCol()).getBtn().Text = "O";
-                board.getCell(bestmove.getRow(), bestmove.getCol()).getBtn().ForeColor = Color.White;
+                board.getCell(bestmove.getRow(), bestmove.getCol()).getBtn().ForeColor = Color.Black;
 
                 playerCanPlay = true;
             }
@@ -128,10 +128,10 @@ namespace CIS167_tictactoe_MasonMcLaughlin
                     //Console.WriteLine(btn.Text);
 
                     int r = int.Parse(btn.Text.ElementAt(0).ToString());
-                    btn.ForeColor = Color.Gray;
+                    btn.ForeColor = Color.SkyBlue;
 
                     int c = int.Parse(btn.Text.ElementAt(1).ToString());
-                    btn.ForeColor = Color.Gray;
+                    btn.ForeColor = Color.SkyBlue;
                     //btn.Text = "";
 
 
@@ -167,7 +167,7 @@ namespace CIS167_tictactoe_MasonMcLaughlin
             {
                 board.getCell(r, c).setValue('X');
                 board.getCell(r, c).getBtn().Text = "X";
-                board.getCell(r,c).getBtn().ForeColor = Color.White;
+                board.getCell(r,c).getBtn().ForeColor = Color.Black;
             }
 
             winner = board.checkWinner();
@@ -210,7 +210,7 @@ namespace CIS167_tictactoe_MasonMcLaughlin
 
                 board.getCell(bestmove.getRow(), bestmove.getCol()).setValue('O');
                 board.getCell(bestmove.getRow(), bestmove.getCol()).getBtn().Text = "O";
-                board.getCell(bestmove.getRow(), bestmove.getCol()).getBtn().ForeColor = Color.White;
+                board.getCell(bestmove.getRow(), bestmove.getCol()).getBtn().ForeColor = Color.Black;
 
                 winner = board.checkWinner();
 

@@ -141,37 +141,43 @@
             // 
             // button12
             // 
+            this.button12.BackColor = System.Drawing.Color.LightCyan;
+            this.button12.ForeColor = System.Drawing.Color.DarkCyan;
             this.button12.Location = new System.Drawing.Point(546, 373);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(75, 23);
             this.button12.TabIndex = 29;
             this.button12.Text = "Exit";
-            this.button12.UseVisualStyleBackColor = true;
+            this.button12.UseVisualStyleBackColor = false;
             this.button12.Click += new System.EventHandler(this.exitBtnClick);
             // 
             // newGameBtn
             // 
+            this.newGameBtn.BackColor = System.Drawing.Color.LightCyan;
+            this.newGameBtn.ForeColor = System.Drawing.Color.DarkCyan;
             this.newGameBtn.Location = new System.Drawing.Point(380, 373);
             this.newGameBtn.Name = "newGameBtn";
             this.newGameBtn.Size = new System.Drawing.Size(75, 23);
             this.newGameBtn.TabIndex = 28;
             this.newGameBtn.Text = "New Game";
-            this.newGameBtn.UseVisualStyleBackColor = true;
+            this.newGameBtn.UseVisualStyleBackColor = false;
             this.newGameBtn.Click += new System.EventHandler(this.newGameBtnClick);
             // 
             // startBtn
             // 
+            this.startBtn.BackColor = System.Drawing.Color.LightCyan;
+            this.startBtn.ForeColor = System.Drawing.Color.DarkCyan;
             this.startBtn.Location = new System.Drawing.Point(223, 373);
             this.startBtn.Name = "startBtn";
             this.startBtn.Size = new System.Drawing.Size(75, 23);
             this.startBtn.TabIndex = 27;
             this.startBtn.Text = "Start";
-            this.startBtn.UseVisualStyleBackColor = true;
+            this.startBtn.UseVisualStyleBackColor = false;
             this.startBtn.Click += new System.EventHandler(this.startBtnClick);
             // 
             // button9
             // 
-            this.button9.BackColor = System.Drawing.Color.Gray;
+            this.button9.BackColor = System.Drawing.Color.SkyBlue;
             this.button9.Location = new System.Drawing.Point(545, 184);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(75, 23);
@@ -182,7 +188,7 @@
             // 
             // button8
             // 
-            this.button8.BackColor = System.Drawing.Color.Gray;
+            this.button8.BackColor = System.Drawing.Color.SkyBlue;
             this.button8.Location = new System.Drawing.Point(380, 184);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(75, 23);
@@ -193,7 +199,7 @@
             // 
             // button7
             // 
-            this.button7.BackColor = System.Drawing.Color.Gray;
+            this.button7.BackColor = System.Drawing.Color.SkyBlue;
             this.button7.Location = new System.Drawing.Point(223, 184);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(75, 23);
@@ -204,7 +210,7 @@
             // 
             // button6
             // 
-            this.button6.BackColor = System.Drawing.Color.Gray;
+            this.button6.BackColor = System.Drawing.Color.SkyBlue;
             this.button6.Location = new System.Drawing.Point(545, 111);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 23);
@@ -215,7 +221,7 @@
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.Gray;
+            this.button5.BackColor = System.Drawing.Color.SkyBlue;
             this.button5.Location = new System.Drawing.Point(380, 111);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
@@ -226,7 +232,7 @@
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.Gray;
+            this.button4.BackColor = System.Drawing.Color.SkyBlue;
             this.button4.Location = new System.Drawing.Point(223, 111);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
@@ -237,7 +243,7 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.Gray;
+            this.button3.BackColor = System.Drawing.Color.SkyBlue;
             this.button3.Location = new System.Drawing.Point(545, 41);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
@@ -248,7 +254,7 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Gray;
+            this.button2.BackColor = System.Drawing.Color.SkyBlue;
             this.button2.Location = new System.Drawing.Point(380, 41);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
@@ -259,7 +265,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Gray;
+            this.button1.BackColor = System.Drawing.Color.SkyBlue;
             this.button1.Location = new System.Drawing.Point(223, 41);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
@@ -272,6 +278,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkCyan;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lbl_newGame);
             this.Controls.Add(this.lbl_winner);
