@@ -18,6 +18,7 @@ namespace CIS167_tictactoe_MasonMcLaughlin
         int winner;
         Cell cell;
         bool playerCanPlay;
+        bool gameStarted = false;
 
         public Form1()
         {
@@ -91,7 +92,7 @@ namespace CIS167_tictactoe_MasonMcLaughlin
         private void setUpBoard()
         {
             board = new Board();
-            
+            gameStarted = true;
             
             winner = -999;
 
@@ -179,6 +180,7 @@ namespace CIS167_tictactoe_MasonMcLaughlin
                 lbl_winner.Visible = true;
                 await Task.Delay(1000);
                 gameOver = true;
+                gameStarted = false;
                 
 
                 if (winner == -1)
@@ -221,7 +223,7 @@ namespace CIS167_tictactoe_MasonMcLaughlin
                     lbl_winner.Visible = true;
                     await Task.Delay(1000);
                     gameOver = true;
-                   
+                    gameStarted = false;
 
                     if (winner == -1)
                     {
@@ -374,7 +376,11 @@ namespace CIS167_tictactoe_MasonMcLaughlin
 
         private void radioButton1_CheckedChanged_1(object sender, EventArgs e)
         {
-            whoGoes = 1;
+            if(!gameStarted)
+            {
+                whoGoes = 1;
+            }
+            
             //Console.WriteLine("Player 1 goes first");
             //Console.WriteLine(whoGoes);
             
@@ -382,28 +388,36 @@ namespace CIS167_tictactoe_MasonMcLaughlin
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            whoGoes = 2;
+            if (!gameStarted)
+            {
+                whoGoes = 2;
+            }
             //Console.WriteLine("The AI goes first");
             //Console.WriteLine(whoGoes);
-            
+
         }
 
         private void radioButton3_Click(object sender, EventArgs e)
         {
-            Random rnd = new Random();
-            whoGoes = rnd.Next(1, 3);
+            if (!gameStarted)
+            {
+                Random rnd = new Random();
+                whoGoes = rnd.Next(1, 3);
 
-            if (whoGoes == 1)
-            {
-                //Console.WriteLine("1 was picked at random");
-                //Console.WriteLine(whoGoes);
-                
-            }
-            else if (whoGoes == 2)
-            {
-                //Console.WriteLine("2 was picked at random");
-                //Console.WriteLine(whoGoes);
-                
+                if (whoGoes == 1)
+                {
+                    whoGoes = 1;
+                    //Console.WriteLine("1 was picked at random");
+                    //Console.WriteLine(whoGoes);
+
+                }
+                else if (whoGoes == 2)
+                {
+                    whoGoes = 2;
+                    //Console.WriteLine("2 was picked at random");
+                    //Console.WriteLine(whoGoes);
+
+                }
             }
         }
     }
